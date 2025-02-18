@@ -1,8 +1,9 @@
 'use client';
 import { useState, useEffect } from 'react';
 import styles from './page.module.css';
-import { questions } from './data.json';
+import data from './data.json';
 
+const questions = data.questions
 const STORAGE_KEY = 'quizState';
 const INITIAL_TIME = 3; // Default timer duration
 
