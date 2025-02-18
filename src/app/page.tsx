@@ -5,7 +5,7 @@ import data from './data.json';
 
 const questions = data.questions
 const STORAGE_KEY = 'quizState';
-const INITIAL_TIME = 3; // Default timer duration
+const INITIAL_TIME = 60; // Default timer duration
 
 const App = () => {
   // State variables
