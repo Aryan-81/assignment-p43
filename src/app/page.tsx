@@ -29,6 +29,7 @@ const App = () => {
       const parsedState = JSON.parse(savedState);
       setCurrentQuestionIndex(parsedState.currentQuestionIndex);
       setCorrectAnswers(parsedState.correctAnswers);
+      setSelectedOption(parsedState.selectedOption)
       setShowResults(parsedState.showResults);
       setIsSubmitted(parsedState.isSubmitted)
       setIsTimeUp(parsedState.isTimeUp || false);
@@ -49,13 +50,14 @@ const App = () => {
         JSON.stringify({
           currentQuestionIndex,
           correctAnswers,
+          selectedOption,
           showResults,
           isSubmitted,
           isTimeUp,
         })
       );
     }
-  }, [currentQuestionIndex, correctAnswers, showResults, isTimeUp,isSubmitted, loading]);
+  }, [currentQuestionIndex, correctAnswers,selectedOption, showResults, isTimeUp,isSubmitted, loading]);
 
   /**
    * Timer countdown logic. Stops if time runs out or quiz ends.
