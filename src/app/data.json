@@ -1,0 +1,19 @@
+{
+    "questions": [
+        {
+            "question": "What is the largest ocean on Earth?",
+            "options": ["Atlantic Ocean", "Indian Ocean", "Arctic Ocean", "Pacific Ocean"],
+            "correctAnswer": 3
+        },
+        {
+            "question": "Who developed the theory of relativity?",
+            "options": ["Isaac Newton", "Nikola Tesla", "Albert Einstein", "Galileo Galilei"],
+            "correctAnswer": 2
+        },
+        {
+            "question": "What is the chemical symbol for gold?",
+            "options": ["Au", "Ag", "Fe", "Hg"],
+            "correctAnswer": 0
+        }
+    ]
+}
